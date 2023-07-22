@@ -1,17 +1,25 @@
 #!/bin/bash
 
-# Verificar si el paquete dialog está instalado
-if ! dpkg -s dialog &> /dev/null; then
-    echo "El paquete dialog no está instalado. Instalándolo..."
-    sudo apt-get update
-    sudo apt-get install -y dialog
-fi
+# Función para verificar e instalar el paquete dialog si es necesario
+check_and_install_dialog() {
+    if ! dpkg -s dialog &> /dev/null; then
+        echo "El paquete dialog no está instalado. Instalándolo..."
+        sudo apt-get update
+        sudo apt-get install -y dialog
+    fi
+}
 
 # Función para cambiar la distribución del teclado al español (Latinoamérica)
 change_keyboard_layout() {
     setxkbmap -layout latam
-    echo "La distribución del teclado se ha cambiado al español (Latinoamérica)."
+    clear
+    echo -e ""
+    echo -e "\e[48;5;128m\e[97mLa distribución del teclado se ha cambiado al español (Latinoamérica).\e[0m"
+    echo -e ""
 }
+
+# Llamar a la función para verificar e instalar el paquete dialog
+check_and_install_dialog
 
 # Mostrar el menú con dialog
 dialog --backtitle "Cambiar la distribución del teclado al español" \
