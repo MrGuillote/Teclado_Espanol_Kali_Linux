@@ -1,6 +1,6 @@
 # Teclado_Espanol_Kali_Linux
 
-Este es un script con interfaz hecho específicamente para configurar el teclado LATAM y la zona horaria en Kali Linux. Proporciona una selección de idiomas y zonas horarias para adaptar el sistema al país correspondiente. + un plus para usar en maquinas virtuales "opcional"
+El script "Teclado_Español_Kali_Linux" es una herramienta en Bash que permite cambiar la distribución del teclado al español (Latinoamérica) en el sistema operativo Kali Linux. Utiliza el paquete console-data para realizar el cambio. Al ejecutar el script con privilegios de administrador, se mostrará una interfaz de diálogo que pregunta al usuario si desea realizar el cambio de distribución. Si el usuario selecciona "Sí", el script aplicará automáticamente la configuración necesaria para habilitar el teclado en español, lo que permite el uso de teclas especiales como la Ñ y otras características específicas del teclado en español. La herramienta es de uso público y gratuito, y el repositorio proporciona instrucciones detalladas sobre cómo clonar y ejecutar el script en Kali Linux.
 
 ## Instrucciones de uso
 
@@ -8,56 +8,29 @@ Clona el repositorio usando el siguiente comando:
 
  `git clone https://github.com/MrGuillote/Teclado_Espanol_Kali_Linux.git`
 
+
 Da permisos de ejecución al script "de ser necesario": 
 
 `chmod +x Teclado_Espanol_Kali_Linux/teclado-kali-es.sh`
+
 
 Ejecuta el script con privilegios de administrador: 
 
 `sudo ./Teclado_Espanol_Kali_Linux/teclado-kali-es.sh`
 
+
 ## Requisitos
 
 - Kali Linux instalado en tu sistema.
-- [whiptail](https://linux.die.net/man/1/whiptail) debe estar instalado para la interfaz gráfica del script que por lo general ya viene instalado en las imagenes de Kali.
 
 ## Funcionamiento
 
-El script te mostrará una interfaz de menú donde podrás seleccionar el idioma y la zona horaria correspondientes a tu país (en AMERICA LATAM). Una vez que hagas las seleccion, el script configurará el idioma y la zona horaria en tu sistema automáticamente, Tambien añadi la opcion que no se bloquee mas Kali cada un cierto tiempo (opcional) ya que es habitual el bloqueo constante en las maquinas virtuales
+El script utilizará el paquete console-data para cambiar la distribución del teclado al español (Latinoamérica) en tu sistema Kali Linux. Al ejecutar el script, se mostrará una interfaz de diálogo que te preguntará si deseas realizar el cambio. Si seleccionas "Sí", la distribución del teclado se cambiará automáticamente.
 
 ## Captura de pantalla
 
-_![image](https://github.com/MrGuillote/Teclado_Espanol_Kali_Linux/assets/89352244/e9596569-875e-401f-8fbe-d589767f247d)_
-![image](https://github.com/MrGuillote/Teclado_Espanol_Kali_Linux/assets/89352244/3c2531f8-aee0-44d6-9712-78540c56837e)
-![image](https://github.com/MrGuillote/Teclado_Espanol_Kali_Linux/assets/89352244/473a7d5c-df86-4850-a892-6c3441ec4b67)
-![image](https://github.com/MrGuillote/Teclado_Espanol_Kali_Linux/assets/89352244/6b3f1b9e-09f5-46b0-afbf-d130ac3449d1)
+![image](https://github.com/MrGuillote/Teclado_Espanol_Kali_Linux/assets/89352244/60022b39-c6b8-443c-9872-4bb6d6434bf0)
 
-
-
-## Idiomas y Zonas Horarias Disponibles
-
-El script ofrece la posibilidad de seleccionar entre varios idiomas y zonas horarias de América Latina:
-
-- Español (Argentina)
-- Español (Bolivia)
-- Portugués (Brasil)
-- Español (Chile)
-- Español (Colombia)
-- Español (Costa Rica)
-- Español (Cuba)
-- Español (Ecuador)
-- Español (El Salvador)
-- Español (Guatemala)
-- Español (Honduras)
-- Español (México)
-- Español (Nicaragua)
-- Español (Panamá)
-- Español (Paraguay)
-- Español (Perú)
-- Español (Puerto Rico)
-- Español (República Dominicana)
-- Español (Uruguay)
-- Español (Venezuela)
 
 ## Licencia
 
