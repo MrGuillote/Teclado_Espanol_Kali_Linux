@@ -8,7 +8,7 @@ function select_language() {
         3 "Español (Brasil)" \
         4 "Español (Chile)" \
         5 "Español (Colombia)" \
-        6 "Español (Costa Rica)" \
+        6 "Español (Costa Rica)" \  
         7 "Español (Cuba)" \
         8 "Español (Ecuador)" \
         9 "Español (El Salvador)" \
