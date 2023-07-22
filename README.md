@@ -1,19 +1,22 @@
 # Teclado_Espanol_Kali_Linux
 
-Este es un script con interfaz hecho específicamente para configurar el teclado LATAM y la zona horaria en Kali Linux. Proporciona una selección de idiomas y zonas horarias para adaptar el sistema al país correspondiente.
+Este es un script con interfaz hecho específicamente para configurar el teclado LATAM y la zona horaria en Kali Linux. Proporciona una selección de idiomas y zonas horarias para adaptar el sistema al país correspondiente. + un plus para usar en maquinas virtuales "opcional"
 
 ## Instrucciones de uso
 
-Clona el repositorio usando el siguiente comando: `git clone https://github.com/MrGuillote/Teclado_Espanol_Kali_Linux.git`
+Clona el repositorio usando el siguiente comando:
+ `git clone https://github.com/MrGuillote/Teclado_Espanol_Kali_Linux.git`
 
-Da permisos de ejecución al script: `chmod +x kali_teclado_es.sh`
+Da permisos de ejecución al script: 
+`chmod +x kali_teclado_es.sh`
 
-Ejecuta el script con privilegios de administrador: `sudo ./kali_teclado_es.sh`
+Ejecuta el script con privilegios de administrador: 
+`sudo ./kali_teclado_es.sh`
 
 ## Requisitos
 
 - Kali Linux instalado en tu sistema.
-- [whiptail](https://linux.die.net/man/1/whiptail) debe estar instalado para la interfaz gráfica del script.
+- [whiptail](https://linux.die.net/man/1/whiptail) debe estar instalado para la interfaz gráfica del script que por lo general ya viene instalado en las imagenes de Kali.
 
 ## Funcionamiento
 
