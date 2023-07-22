@@ -63,7 +63,7 @@ _no tiene lincencia porque basicamente es un script en bash._
 
 ## Final
 
-_Aquí puedes agradecer a las personas o fuentes que hayan contribuido o inspirado tu proyecto._
+_ _
 
 ---
 
