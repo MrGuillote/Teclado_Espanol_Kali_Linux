@@ -4,23 +4,11 @@ Este es un script con interfaz hecho específicamente para configurar el teclado
 
 ## Instrucciones de uso
 
-1. Clona el repositorio usando el siguiente comando:
-git clone https://github.com/MrGuillote/Teclado_Espanol_Kali_Linux.git
+Clona el repositorio usando el siguiente comando: `git clone https://github.com/MrGuillote/Teclado_Espanol_Kali_Linux.git`
 
-markdown
-Copy code
+Da permisos de ejecución al script: `chmod +x kali_teclado_es.sh`
 
-2. Da permisos de ejecución al script:
-chmod +x kali_teclado_es.sh
-
-markdown
-Copy code
-
-3. Ejecuta el script con privilegios de administrador:
-sudo ./kali_teclado_es.sh
-
-markdown
-Copy code
+Ejecuta el script con privilegios de administrador: `sudo ./kali_teclado_es.sh`
 
 ## Requisitos
 
@@ -29,7 +17,7 @@ Copy code
 
 ## Funcionamiento
 
-El script te mostrará una interfaz de menú donde podrás seleccionar el idioma y la zona horaria correspondientes a tu país. Una vez que hagas las selecciones, el script configurará el idioma y la zona horaria en tu sistema automáticamente.
+El script te mostrará una interfaz de menú donde podrás seleccionar el idioma y la zona horaria correspondientes a tu país (en AMERICA LATAM). Una vez que hagas las seleccion, el script configurará el idioma y la zona horaria en tu sistema automáticamente, Tambien añadi la opcion que no se bloquee mas Kali cada un cierto tiempo (opcional) ya que es habitual el bloqueo constante en las maquinas virtuales
 
 ## Captura de pantalla
 
@@ -62,18 +50,12 @@ El script ofrece la posibilidad de seleccionar entre varios idiomas y zonas hora
 
 ## Licencia
 
-_Aquí puedes agregar información sobre la licencia que se aplica a tu script._
+_no tiene lincencia porque basicamente es un script en bash._
 
-## Contribuciones
-
-_Si estás interesado en contribuir con mejoras, correcciones de errores o nuevas características, ¡eres bienvenido! Sigue las instrucciones de contribución en [CONTRIBUTING.md](link-to-CONTRIBUTING.md) para enviar tus cambios._
-
-## Agradecimientos
+## Final
 
 _Aquí puedes agradecer a las personas o fuentes que hayan contribuido o inspirado tu proyecto._
 
 ---
-
-¡La configuración del idioma y zona horaria se ha completado exitosamente! Si deseas aplicar completamente los cambios, te recomendamos reiniciar el sistema.
 
 ¡Gracias por usar Teclado_Espanol_Kali_Linux! Si tienes alguna pregunta o encuentras algún problema, no dudes en abrir un issue en el repositorio.
