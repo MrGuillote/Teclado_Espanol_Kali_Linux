@@ -6,15 +6,15 @@ Este es un script con interfaz hecho específicamente para configurar el teclado
 
 Clona el repositorio usando el siguiente comando:
 
- `git clone https://github.com/MrGuillote/Teclado_Espanol_Kali_Linux/blob/main/teclado-kali-es.sh.git`
+ `git clone https://github.com/MrGuillote/Teclado_Espanol_Kali_Linux.git`
 
-Da permisos de ejecución al script: 
+Da permisos de ejecución al script "de ser necesario": 
 
-`chmod +x kali_teclado_es.sh`
+`chmod +x Teclado_Espanol_Kali_Linux/teclado-kali-es.sh`
 
 Ejecuta el script con privilegios de administrador: 
 
-`sudo ./kali_teclado_es.sh`
+`sudo ./Teclado_Espanol_Kali_Linux/teclado-kali-es.sh`
 
 ## Requisitos
 
