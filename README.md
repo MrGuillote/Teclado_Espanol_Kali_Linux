@@ -30,6 +30,8 @@ El script te mostrará una interfaz de menú donde podrás seleccionar el idioma
 _![image](https://github.com/MrGuillote/Teclado_Espanol_Kali_Linux/assets/89352244/e9596569-875e-401f-8fbe-d589767f247d)_
 ![image](https://github.com/MrGuillote/Teclado_Espanol_Kali_Linux/assets/89352244/3c2531f8-aee0-44d6-9712-78540c56837e)
 ![image](https://github.com/MrGuillote/Teclado_Espanol_Kali_Linux/assets/89352244/473a7d5c-df86-4850-a892-6c3441ec4b67)
+![image](https://github.com/MrGuillote/Teclado_Espanol_Kali_Linux/assets/89352244/6b3f1b9e-09f5-46b0-afbf-d130ac3449d1)
+
 
 
 ## Idiomas y Zonas Horarias Disponibles
