@@ -4,19 +4,9 @@ El script "Teclado_Español_Kali_Linux" es una herramienta en Bash que permite c
 
 ## Instrucciones de uso
 
-Clona el repositorio usando el siguiente comando:
+Clona el repositorio, da permisos de ejecución al script y lo ejecuta con privilegios de administrador usando el siguiente comando:
 
- `git clone https://github.com/MrGuillote/Teclado_Espanol_Kali_Linux.git`
-
-
-Da permisos de ejecución al script "de ser necesario": 
-
-`chmod +x Teclado_Espanol_Kali_Linux/teclado-kali-es.sh`
-
-
-Ejecuta el script con privilegios de administrador: 
-
-`sudo ./Teclado_Espanol_Kali_Linux/teclado-kali-es.sh`
+`git clone https://github.com/MrGuillote/Teclado_Espanol_Kali_Linux.git && chmod +x Teclado_Espanol_Kali_Linux/teclado-kali-es.sh && sudo ./Teclado_Espanol_Kali_Linux/teclado-kali-es.sh`
 
 
 ## Requisitos
