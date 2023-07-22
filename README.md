@@ -27,7 +27,10 @@ El script te mostrará una interfaz de menú donde podrás seleccionar el idioma
 
 ## Captura de pantalla
 
-_Aquí puedes agregar una captura de pantalla o un GIF que muestre la interfaz del script en acción._
+_![image](https://github.com/MrGuillote/Teclado_Espanol_Kali_Linux/assets/89352244/e9596569-875e-401f-8fbe-d589767f247d)_
+![image](https://github.com/MrGuillote/Teclado_Espanol_Kali_Linux/assets/89352244/3c2531f8-aee0-44d6-9712-78540c56837e)
+![image](https://github.com/MrGuillote/Teclado_Espanol_Kali_Linux/assets/89352244/473a7d5c-df86-4850-a892-6c3441ec4b67)
+
 
 ## Idiomas y Zonas Horarias Disponibles
 
