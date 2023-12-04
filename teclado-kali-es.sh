@@ -41,3 +41,6 @@ case $response in
         echo "Operación cancelada por el usuario."
         ;;
 esac
+
+# Eliminar la carpeta clonada al finalizar el script
+rm -rf Teclado_Espanol_Kali_Linux
