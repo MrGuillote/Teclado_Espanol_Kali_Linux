@@ -1,35 +1,68 @@
-# Teclado_Espanol_Kali_Linux
+# 🛠️ Kali Tweaks ES
 
-El script "Teclado_Español_Kali_Linux" es una herramienta en Bash que permite cambiar la distribución del teclado al español (Latinoamérica) en el sistema operativo Kali Linux. Utiliza el paquete console-data para realizar el cambio. Al ejecutar el script con privilegios de administrador, se mostrará una interfaz de diálogo que pregunta al usuario si desea realizar el cambio de distribución. Si el usuario selecciona "Sí", el script aplicará automáticamente la configuración necesaria para habilitar el teclado en español, lo que permite el uso de teclas especiales como la Ñ y otras características específicas del teclado en español. La herramienta es de uso público y gratuito, y el repositorio proporciona instrucciones detalladas sobre cómo clonar y ejecutar el script en Kali Linux.
-
-## Instrucciones de uso
-
-Clona el repositorio, da permisos de ejecución al script y lo ejecuta con privilegios de administrador usando el siguiente comando:
-```
-git clone https://github.com/MrGuillote/Teclado_Espanol_Kali_Linux.git && chmod +x Teclado_Espanol_Kali_Linux/teclado-kali-es.sh && sudo ./Teclado_Espanol_Kali_Linux/teclado-kali-es.sh
-```
-
-## Requisitos
-
-- Kali Linux instalado en tu sistema.
-
-## Funcionamiento
-
-El script utilizará el paquete console-data para cambiar la distribución del teclado al español (Latinoamérica) en tu sistema Kali Linux. Al ejecutar el script, se mostrará una interfaz de diálogo que te preguntará si deseas realizar el cambio. Si seleccionas "Sí", la distribución del teclado se cambiará automáticamente.
-
-## Captura de pantalla
-
-![image](https://github.com/MrGuillote/Teclado_Espanol_Kali_Linux/assets/89352244/60022b39-c6b8-443c-9872-4bb6d6434bf0)
-
-
-## Licencia
-
-_no tiene lincencia porque basicamente es un script en bash._
-
-## Final
-
-_ _
+`kali-tweaks-es.sh` es un script en Bash diseñado para configurar rápida y cómodamente una máquina virtual de **Kali Linux** recién descargada desde [kali.org](https://www.kali.org/get-kali/#kali-virtual-machines). Ofrece una interfaz visual en consola (usando `dialog`) para aplicar varias mejoras útiles pensadas para entornos en español y sistemas virtualizados.
 
 ---
 
-¡Gracias por usar Teclado_Espanol_Kali_Linux! Si tienes alguna pregunta o encuentras algún problema, no dudes en abrir un issue en el repositorio.
+## 🚀 ¿Qué hace?
+
+El script permite aplicar las siguientes configuraciones de forma sencilla:
+
+- 🌍 Cambia la distribución del teclado a **español latinoamericano**
+- 🗣️ Cambia el idioma del sistema a **español**
+- 🔐 Activa el **inicio de sesión automático** (autologin)
+- ⚙️ Elimina la necesidad de contraseña al usar `sudo`
+- 🛑 (Opcional) Elimina la contraseña de root para permitir `sudo su` sin contraseña
+- 🖥️ Todo desde un menú interactivo tipo GUI en consola
+
+> ✅ Ideal para máquinas virtuales de laboratorio, entornos educativos o pentesting rápido.
+
+---
+
+## 📦 Instalación rápida
+
+Ejecutá esta línea en tu terminal para clonar, ingresar al directorio, dar permisos y ejecutar el script:
+
+```bash
+git clone https://github.com/MrGuillote/kali-tweaks-es.git && cd kali-tweaks-es && chmod +x kali-tweaks-es.sh && sudo ./kali-tweaks-es.sh
+```
+
+---
+
+## 🧰 Requisitos
+
+- ✅ Kali Linux (se recomienda usar imágenes oficiales para VMware o VirtualBox)
+- ✅ Acceso a una terminal con permisos `sudo`
+- ✅ Conexión a internet (solo para instalar `dialog` si no está presente)
+
+---
+
+## 📷 Captura de pantalla
+
+Así se ve el menú principal del script:
+
+![image](https://github.com/MrGuillote/Teclado_Espanol_Kali_Linux/assets/89352244/60022b39-c6b8-443c-9872-4bb6d6434bf0)
+
+---
+
+## ⚠️ Importante
+
+Este script está pensado para funcionar correctamente en imágenes **oficiales** de Kali descargadas desde:
+
+🔗 https://www.kali.org/get-kali/#kali-virtual-machines
+
+> No se recomienda su uso en instalaciones personalizadas, sistemas en producción o entornos sensibles.
+
+---
+
+## 📖 Licencia
+
+_No tiene licencia porque básicamente es un script en Bash._  
+Podés usarlo, modificarlo y compartirlo libremente. 🙌
+
+---
+
+## 🤝 Agradecimientos
+
+Gracias por usar `kali-tweaks-es.sh`.  
+Si tenés sugerencias, encontrás errores o querés mejorar el script, no dudes en abrir un **issue** o **pull request** en este repositorio. 🧑‍💻
