@@ -30,15 +30,16 @@ enable_autologin() {
     echo "🔐 Activando autologin para $USER_NAME..."
 
     if [ "$EUID" -ne 0 ]; then
-        echo "⚠️  Este paso requiere permisos de root. Usá: sudo ./configurar_kali.sh"
+        echo "⚠️  Este paso requiere permisos de root. Usá: sudo ./kali-tweaks-es.sh"
         return
     fi
 
     if grep -q "\[Seat:\*\]" "$LIGHTDM_CONF"; then
         sed -i "/^\[Seat:\*\]/a autologin-user=$USER_NAME\nautologin-user-timeout=0" "$LIGHTDM_CONF"
     else
-        echo -e "\n[Seat:*]\nautologin-user=$USER_NAME\nautologin-user-timeout=0" >> "$LIGHTDM_CONF"
+        echo -e "\n[Seat:*]\nautologin-user=$USER_NAME\nautologin-user-timeout=0" | sudo tee -a "$LIGHTDM_CONF" > /dev/null
     fi
+
     echo "✅ Autologin activado"
 }
 
@@ -71,6 +72,13 @@ main_menu() {
     4 "🛑 Quitar contraseña para sudo su (root)" off \
     5 "❌ Salir sin hacer cambios" off 2> opciones.txt
 
+    # Cancelado o cerrado con Esc
+    if [ $? -ne 0 ]; then
+        echo -e "\n❌ Operación cancelada por el usuario."
+        rm -f opciones.txt
+        exit 1
+    fi
+
     choices=$(<opciones.txt)
     rm -f opciones.txt
 
@@ -79,11 +87,11 @@ main_menu() {
 
     for opcion in $choices; do
         case $opcion in
-            \"1\") set_language_and_keyboard ;;
-            \"2\") enable_autologin ;;
-            \"3\") disable_sudo_password ;;
-            \"4\") disable_root_password ;;
-            \"5\") echo "🚪 Saliendo sin hacer cambios"; exit 0 ;;
+            1) set_language_and_keyboard ;;
+            2) enable_autologin ;;
+            3) disable_sudo_password ;;
+            4) disable_root_password ;;
+            5) echo "🚪 Saliendo sin hacer cambios"; exit 0 ;;
         esac
     done
 
